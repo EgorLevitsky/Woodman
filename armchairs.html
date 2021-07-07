@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="img/logo-mini.png" type="images/png">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Infant:wght@400;500;600&family=Ubuntu:wght@300;400;500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/style.min.css">
+  <title>Кресла</title>
+</head>
+
+<body>
+  <div class="page">
+    <header class="header fixed">
+      <div class="container">
+        <div class="header__inner">
+          <a class="logo" href="index.html">
+            <picture >
+                <source srcset="img/logo-media.svg" media="(max-width: 600px)">
+                <img src="img/logo.svg" alt="Логотип сайта">
+            </picture>
+          </a>
+          <div class="header__right">
+            <nav class="menu">
+              <ul class="menu__list">
+                <li class="menu__list-item">
+                  <a class="menu__list-link menu__list-link--red" href="sofa.html">Диваны</a>
+                </li>
+                <li class="menu__list-item">
+                  <a class="menu__list-link menu__list-link--yellow active">Кресла</a>
+                </li>
+                <li class="menu__list-item">
+                  <a class="menu__list-link menu__list-link--green" href="tables.html">Столы</a>
+                </li>
+                <li class="menu__list-item">
+                  <a class="menu__list-link menu__list-link--blue" href="chairs.html">Стулья</a>
+                </li>
+                <li class="menu__list-item">
+                  <a class="menu__list-link menu__list-link--purple" href="decor.html">Декор</a>
+                </li>
+              </ul>
+            </nav>
+              <a class="header__cart" href="cart.html"><img src="img/cart.svg" alt="Корзина"></a>
+              <button class="burger" id="burger"><span></span></button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="main-content">
+  <div class="catalog-page">
+    <div class="container">
+      <div class="breadcrumbs">
+        <ul class="breadcrumbs__list">
+          <li class="breadcrumbs__list-item">
+            <a class="breadcrumbs__list-link" href="index.html">Главная</a>
+          </li>
+          <li class="breadcrumbs__list-item">
+            <a class="breadcrumbs__list-link breadcrumbs__list-link--current">Кресла</a>
+          </li>
+        </ul>
+      </div>
+      <h1 class="catalog__title main-title">Кресла</h1>
+      <div class="catalog">
+        <div class="catalog__filters">
+          <h2 class="catalog__filter-title">Фильтр</h2>
+          <div class="catalog__filter">
+            <div class="catalog__filter-top">
+              <h3 class="catalog__filter-name">Цвет</h3>
+              <button class="catalog__filter-btn"></button>
+            </div>
+            <div class="catalog__filter-bottom">
+              <ul class="colors__list">
+                <li class="colors__item colors__item--white" data-color="white"></li>
+                <li class="colors__item colors__item--black" data-color="black"></li>
+                <li class="colors__item colors__item--gray" data-color="gray"></li>
+                <li class="colors__item colors__item--green" data-color="green"></li>
+                <li class="colors__item colors__item--red" data-color="red"></li>
+              </ul>
+              <button class="catalog__filter-clear" type="button">Отчистить</button>
+            </div>
+          </div>
+          <div class="catalog__filter">
+            <div class="catalog__filter-top">
+              <h3 class="catalog__filter-name">Цена</h3>
+              <button class="catalog__filter-btn" type="button"></button>
+            </div>
+            <div class="catalog__filter-bottom">
+              <ul class="catalog__filter-items">
+                <li class="catalog__filter-item">
+                  <label class="custom-checkbox">
+                    <input class="custom-checkbox__input" type="checkbox">
+                    <span class="custom-checkbox__text">0 - 10 000р</span>
+                  </label>
+                </li>
+                <li class="catalog__filter-item">
+                  <label class="custom-checkbox">
+                    <input class="custom-checkbox__input" type="checkbox">
+                    <span class="custom-checkbox__text">10 000 - 15 000р</span>
+                  </label>
+                </li>
+                <li class="catalog__filter-item">
+                  <label class="custom-checkbox">
+                    <input class="custom-checkbox__input" type="checkbox">
+                    <span class="custom-checkbox__text">15 000 - 20 000р</span>
+                  </label>
+                </li>
+                <li class="catalog__filter-item">
+                  <label class="custom-checkbox">
+                    <input class="custom-checkbox__input" type="checkbox">
+                    <span class="custom-checkbox__text">20 000 - 30 000р</span>
+                  </label>
+                </li>
+                <li class="catalog__filter-item">
+                  <label class="custom-checkbox">
+                    <input class="custom-checkbox__input" type="checkbox">
+                    <span class="custom-checkbox__text">более 30 000р</span>
+                  </label>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <ul class="catalog__grid">
+          <li class="catalog__grid-item white">
+            <a href="sofa-card.html"></a>
+            <div class="catalog__grid-top">
+              <img class="catalog__grid-img" src="img/armchair-catalog-1.jpg" alt="Кресло">
+              <div class="catalog__grid-overlay">
+                <img class="catalog__grid-icon" src="img/eye.svg" alt="Глаз">
+                <div class="catalog__grid-text">Смотреть сейчас</div>
+              </div>
+            </div>
+            <div class="catalog__grid-desc">
+              <h4 class="catalog__grid-name">“Лео”</h4>
+              <div class="catalog__grid-price">15.499р.</div>
+            </div>
+          </li>
+          <li class="catalog__grid-item green">
+            <a href="sofa-card.html"></a>
+            <div class="catalog__grid-top">
+              <img class="catalog__grid-img" src="img/armchair-catalog-5.jpg" alt="Кресло">
+              <div class="catalog__grid-overlay">
+                <img class="catalog__grid-icon" src="img/eye.svg" alt="Глаз">
+                <div class="catalog__grid-text">Смотреть сейчас</div>
+              </div>
+            </div>
+            <div class="catalog__grid-desc">
+              <h4 class="catalog__grid-name">“Макон”</h4>
+              <div class="catalog__grid-price">17.999р.</div>
+            </div>
+          </li>
+          <li class="catalog__grid-item gray">
+            <a href="sofa-card.html"></a>
+            <div class="catalog__grid-top">
+              <img class="catalog__grid-img" src="img/armchair-catalog-2.jpg" alt="Кресло">
+              <div class="catalog__grid-overlay">
+                <img class="catalog__grid-icon" src="img/eye.svg" alt="Глаз">
+                <div class="catalog__grid-text">Смотреть сейчас</div>
+              </div>
+            </div>
+            <div class="catalog__grid-desc">
+              <h4 class="catalog__grid-name">Густав”</h4>
+              <div class="catalog__grid-price">13.999р.</div>
+            </div>
+          </li>
+          <li class="catalog__grid-item white">
+            <a href="sofa-card.html"></a>
+            <div class="catalog__grid-top">
+              <img class="catalog__grid-img" src="img/armchair-catalog-3.jpg" alt="Кресло">
+              <div class="catalog__grid-overlay">
+                <img class="catalog__grid-icon" src="img/eye.svg" alt="Глаз">
+                <div class="catalog__grid-text">Смотреть сейчас</div>
+              </div>
+            </div>
+            <div class="catalog__grid-desc">
+              <h4 class="catalog__grid-name">“Чейз”</h4>
+              <div class="catalog__grid-price">9.199р.</div>
+            </div>
+          </li>
+          <li class="catalog__grid-item black">
+            <a href="sofa-card.html"></a>
+            <div class="catalog__grid-top">
+              <img class="catalog__grid-img" src="img/armchair-catalog-4.jpg" alt="Кресло">
+              <div class="catalog__grid-overlay">
+                <img class="catalog__grid-icon" src="img/eye.svg" alt="Глаз">
+                <div class="catalog__grid-text">Смотреть сейчас</div>
+              </div>
+            </div>
+            <div class="catalog__grid-desc">
+              <h4 class="catalog__grid-name">“Луи”</h4>
+              <div class="catalog__grid-price">14.999р.</div>
+            </div>
+          </li>
+          <li class="catalog__grid-item black">
+            <a href="sofa-card.html"></a>
+            <div class="catalog__grid-top">
+              <img class="catalog__grid-img" src="img/armchair-catalog-6.jpg" alt="Кресло">
+              <div class="catalog__grid-overlay">
+                <img class="catalog__grid-icon" src="img/eye.svg" alt="Глаз">
+                <div class="catalog__grid-text">Смотреть сейчас</div>
+              </div>
+            </div>
+            <div class="catalog__grid-desc">
+              <h4 class="catalog__grid-name">“Морган”</h4>
+              <div class="catalog__grid-price">24.999р.</div>
+            </div>
+          </li>
+          <li class="catalog__grid-item gray">
+            <a href="sofa-card.html"></a>
+            <div class="catalog__grid-top">
+              <img class="catalog__grid-img" src="img/armchair-catalog-7.jpg" alt="Кресло">
+              <div class="catalog__grid-overlay">
+                <img class="catalog__grid-icon" src="img/eye.svg" alt="Глаз">
+                <div class="catalog__grid-text">Смотреть сейчас</div>
+              </div>
+            </div>
+            <div class="catalog__grid-desc">
+              <h4 class="catalog__grid-name">“Фостер”</h4>
+              <div class="catalog__grid-price">20.499р.</div>
+            </div>
+          </li>
+          <li class="catalog__grid-item red">
+            <a href="sofa-card.html"></a>
+            <div class="catalog__grid-top">
+              <img class="catalog__grid-img" src="img/armchair-catalog-8.jpg" alt="Кресло">
+              <div class="catalog__grid-overlay">
+                <img class="catalog__grid-icon" src="img/eye.svg" alt="Глаз">
+                <div class="catalog__grid-text">Смотреть сейчас</div>
+              </div>
+            </div>
+            <div class="catalog__grid-desc">
+              <h4 class="catalog__grid-name">“Ида”</h4>
+              <div class="catalog__grid-price">16.499р.</div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</main>
+<footer class="footer">
+  <div class="container">
+    <div class="footer__top">
+      <div class="footer__about">
+        Компания Woodman родилась благодаря более чем 10-летнему прислушиванию к мнению клиентов мебельной промышленности. Узнайте о наших корнях.
+      </div>
+      <div class="footer__col">
+        <h4 class="footer__title">Связаться с нами</h4>
+        <ul class="footer__col-list">
+          <li class="footer__col-item">
+            <a class="footer__col-link" href="tel:+79245556677
+            ">+7 (924) 555 66 77
+            </a>
+          </li>
+          <li class="footer__col-item">
+            <a class="footer__col-link" href="tel:+79245558899
+            ">+7 (924) 555 88 99
+            </a>
+          </li>
+          <li class="footer__col-item">
+            <a class="footer__col-link" href="tel:+7924555100
+            ">+7 (924) 555 11 00
+            </a>
+          </li>
+          <li class="footer__col-item">Пн-Пт: 08:00 - 19:00
+          </li>
+          <li class="footer__col-item">Сб-Вк: 08:00 - 17:00
+          </li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4 class="footer__title">Клиентам</h4>
+        <ul class="footer__col-list">
+          <li class="footer__col-item">
+            <a class="footer__col-link" href="#">Оплата</a>
+          </li>
+          <li class="footer__col-item">
+            <a class="footer__col-link" href="#">Вопрос - ответ</a>
+          </li>
+          <li class="footer__col-item">
+            <a class="footer__col-link" href="#">Доставка</a>
+          </li>
+          <li class="footer__col-item">
+            <a class="footer__col-link" href="#">Сотрудничество</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__social">
+        <h4 class="footer__title">Наши социальные сети</h4>
+        <ul class="footer__social-list">
+          <li class="footer__social-item">
+            <a class="footer__social-link social-link--instagram" href="https://instagram.com" target="_blank">
+              <svg class="footer__social-icon">
+                <use xlink:href="sprite.svg#instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="footer__social-item">
+            <a class="footer__social-link social-link--facebook" href="https://facebook.com" target="_blank">
+              <svg class="footer__social-icon">
+                <use xlink:href="sprite.svg#facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="footer__social-item">
+            <a class="footer__social-link social-link--vk" href="https://vk.com" target="_blank">
+              <svg class="footer__social-icon">
+                <use xlink:href="sprite.svg#vk"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="footer__social-item">
+            <a class="footer__social-link social-link--pinterest" href="https://pinterest.com" target="_blank">
+              <svg class="footer__social-icon">
+                <use xlink:href="sprite.svg#pinterest"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="footer__social-item">
+            <a class="footer__social-link social-link--twitter" href="https://twitter.com" target="_blank">
+              <svg class="footer__social-icon">
+                <use xlink:href="sprite.svg#twitter"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <a class="logo" href="index.html">
+        <picture >
+            <source srcset="img/logo-media.svg" media="(max-width: 600px)">
+            <img src="img/logo.svg" alt="Логотип сайта">
+        </picture>
+      </a>
+      <div class="footer__copy">© 2021 Woodman. Все права защищены.</div>
+    </div>
+  </div>
+</footer>
+</div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="js/main.min.js"></script>
+</body>
+</html>

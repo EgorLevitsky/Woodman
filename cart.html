@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/logo-mini.png" type="images/png">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Infant:wght@400;500;600&family=Ubuntu:wght@300;400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Корзина</title>
+</head>
+
+<body>
+    <div class="page">
+        <header class="header fixed">
+            <div class="container">
+              <div class="header__inner">
+                <a class="logo" href="index.html">
+                  <picture >
+                      <source srcset="img/logo-media.svg" media="(max-width: 600px)">
+                      <img src="img/logo.svg" alt="Логотип сайта">
+                  </picture>
+                </a>
+                <div class="header__right">
+                  <nav class="menu">
+                    <ul class="menu__list">
+                      <li class="menu__list-item">
+                        <a class="menu__list-link menu__list-link--red" href="sofa.html">Диваны</a>
+                      </li>
+                      <li class="menu__list-item">
+                        <a class="menu__list-link menu__list-link--yellow" href="armchairs.html">Кресла</a>
+                      </li>
+                      <li class="menu__list-item">
+                        <a class="menu__list-link menu__list-link--green" href="tables.html">Столы</a>
+                      </li>
+                      <li class="menu__list-item">
+                        <a class="menu__list-link menu__list-link--blue" href="chairs.html">Стулья</a>
+                      </li>
+                      <li class="menu__list-item">
+                        <a class="menu__list-link menu__list-link--purple" href="decor.html">Декор</a>
+                      </li>
+                    </ul>
+                  </nav>
+                    <a class="header__cart" href="cart.html"><img src="img/cart.svg" alt="Корзина"></a>
+                    <button class="burger" id="burger"><span></span></button>
+                </div>
+              </div>
+            </div>
+          </header>
+        <main class="main-content">
+            <div class="cart">
+                <div class="container">
+                    <h1 class="cart__title main-title">Корзина пуста</h1>
+                    <div class="cart__text">У вас нет товаров в корзине.</div>
+                    <div class="cart__text">Нажмите <a href="sofa.html">здесь</a>, чтобы продолжить покупки.</div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/main.min.js"></script>
+</body>
+
+</html>

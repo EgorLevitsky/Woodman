@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/logo-mini.png" type="images/png">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Infant:wght@400;500;600&family=Ubuntu:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Диваны</title>
+</head>
+
+<body>
+    <div class="page">
+        <header class="header fixed">
+            <div class="container">
+                <div class="header__inner">
+                    <a class="logo" href="index.html">
+                        <picture>
+                            <source srcset="img/logo-media.svg" media="(max-width: 600px)">
+                            <img src="img/logo.svg" alt="Логотип сайта">
+                        </picture>
+                    </a>
+                    <div class="header__right">
+                        <nav class="menu">
+                            <ul class="menu__list">
+                                <li class="menu__list-item">
+                                    <a class="menu__list-link menu__list-link--red" href="sofa.html">Диваны</a>
+                                </li>
+                                <li class="menu__list-item">
+                                    <a class="menu__list-link menu__list-link--yellow" href="armchairs.html">Кресла</a>
+                                </li>
+                                <li class="menu__list-item">
+                                    <a class="menu__list-link menu__list-link--green" href="tables.html">Столы</a>
+                                </li>
+                                <li class="menu__list-item">
+                                    <a class="menu__list-link menu__list-link--blue" href="chairs.html">Стулья</a>
+                                </li>
+                                <li class="menu__list-item">
+                                    <a class="menu__list-link menu__list-link--purple" href="decor.html">Декор</a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <a class="header__cart" href="cart.html"><img src="img/cart.svg" alt="Корзина"></a>
+                        <button class="burger" id="burger"><span></span></button>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main class="main-content">
+            <div class="card">
+                <div class="container">
+                    <div class="breadcrumbs">
+                        <ul class="breadcrumbs__list">
+                            <li class="breadcrumbs__list-item">
+                                <a class="breadcrumbs__list-link" href="index.html">Главная</a>
+                            </li>
+                            <li class="breadcrumbs__list-item">
+                                <a class="breadcrumbs__list-link" href="sofa.html">Диваны</a>
+                            </li>
+                            <li class="breadcrumbs__list-item">
+                                <a class="breadcrumbs__list-link breadcrumbs__list-link--current">“Графит”</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="card__flex">
+                        <div class="card__left">
+                            <div class="swiper-container card__thumb">
+                                <div class="swiper-wrapper">
+                                  <div class="swiper-slide card__thumb-item">
+                                    <img src="img/main-card-sofa1.jpg" alt="Диван">
+                                  </div>
+                                  <div class="swiper-slide card__thumb-item">
+                                    <img src="img/main-card-sofa2.jpg" alt="Диван">
+                                  </div>
+                                  <div class="swiper-slide card__thumb-item">
+                                    <img src="img/main-card-sofa3.jpg" alt="Диван">
+                                  </div>
+                                  <div class="swiper-slide card__thumb-item">
+                                    <img src="img/main-card-sofa4.jpg" alt="Диван">
+                                  </div>
+                                  <div class="swiper-slide card__thumb-item">
+                                    <img src="img/main-card-sofa5.jpg" alt="Диван">
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div class="swiper-container card__big-img">
+                                <div class="swiper-wrapper">
+                                  <div class="swiper-slide">
+                                    <img src="img/main-card-sofa1.jpg" alt="Диван">
+                                  </div>
+                                  <div class="swiper-slide">
+                                    <img src="img/main-card-sofa2.jpg" alt="Диван">
+                                  </div>
+                                  <div class="swiper-slide">
+                                    <img src="img/main-card-sofa3.jpg" alt="Диван">
+                                  </div>
+                                  <div class="swiper-slide">
+                                    <img src="img/main-card-sofa4.jpg" alt="Диван">
+                                  </div>
+                                  <div class="swiper-slide">
+                                    <img src="img/main-card-sofa5.jpg" alt="Диван">
+                                  </div>
+                                </div>
+                                <div class="swiper-button-prev"><img src="img/arrow-left.svg" alt="Стрелка влево"></div>
+                                <div class="swiper-button-next"><img src="img/arrow-right.svg" alt="Стрелка вправо"></div>
+                              </div>
+                        </div>
+                        <div class="card__info">
+                            <div class="card__caption">
+                                <h2 class="card__name">“Графит”</h2>
+                                <div class="card__price">22 999р</div>
+                            </div>
+                            <div class="card__btns">
+                                <div class="card__stepper">
+                                    <button class="btn btn--minus" area-label="minus">
+                                        <svg>
+                                            <use xlink:href="sprite.svg#minus"></use>
+                                        </svg>
+                                    </button>
+                                    <input class="card__stepper-input" type="text" value="1" maxlength="5">
+                                    <button class="btn btn--plus" area-label="plus">
+                                        <svg>
+                                            <use xlink:href="sprite.svg#plus"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <button class="btn">Добавить в корзину</button>
+                            </div>
+                            <div class="card__details">
+                                <h3 class="card__details-name">Детали</h3>
+                                <h4 class="card__details-title">Как показано</h4>
+                                <ul class="card__details-list">
+                                    <li class="card__details-item">обивка букле из волчьего жемчуга</li>
+                                    <li class="card__details-item">состав ткани: 100% полиэстер</li>
+                                    <li class="card__details-item">экологичное строительство</li>
+                                    <li class="card__details-item">доступны индивидуальные опции</li>
+                                    <li class="card__details-item">сделано в России</li>
+                                </ul>
+                                <h4 class="card__details-title">Размеры</h4>
+                                <ul class="card__details-list">
+                                    <li class="card__details-item">46,5 "Ш x 40" x 33,5 "В</li>
+                                    <li class="card__details-item">высота рычага: 25 дюймов</li>
+                                    <li class="card__details-item">экологичное строительство</li>
+                                    <li class="card__details-item">доступны индивидуальные опции</li>
+                                    <li class="card__details-item">сделано в России</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="container">
+              <div class="footer__top">
+                <div class="footer__about">
+                  Компания Woodman родилась благодаря более чем 10-летнему прислушиванию к мнению клиентов мебельной промышленности. Узнайте о наших корнях.
+                </div>
+                <div class="footer__col">
+                  <h4 class="footer__title">Связаться с нами</h4>
+                  <ul class="footer__col-list">
+                    <li class="footer__col-item">
+                      <a class="footer__col-link" href="tel:+79245556677
+                      ">+7 (924) 555 66 77
+                      </a>
+                    </li>
+                    <li class="footer__col-item">
+                      <a class="footer__col-link" href="tel:+79245558899
+                      ">+7 (924) 555 88 99
+                      </a>
+                    </li>
+                    <li class="footer__col-item">
+                      <a class="footer__col-link" href="tel:+7924555100
+                      ">+7 (924) 555 11 00
+                      </a>
+                    </li>
+                    <li class="footer__col-item">Пн-Пт: 08:00 - 19:00
+                    </li>
+                    <li class="footer__col-item">Сб-Вк: 08:00 - 17:00
+                    </li>
+                  </ul>
+                </div>
+                <div class="footer__col">
+                  <h4 class="footer__title">Клиентам</h4>
+                  <ul class="footer__col-list">
+                    <li class="footer__col-item">
+                      <a class="footer__col-link" href="#">Оплата</a>
+                    </li>
+                    <li class="footer__col-item">
+                      <a class="footer__col-link" href="#">Вопрос - ответ</a>
+                    </li>
+                    <li class="footer__col-item">
+                      <a class="footer__col-link" href="#">Доставка</a>
+                    </li>
+                    <li class="footer__col-item">
+                      <a class="footer__col-link" href="#">Сотрудничество</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="footer__social">
+                  <h4 class="footer__title">Наши социальные сети</h4>
+                  <ul class="footer__social-list">
+                    <li class="footer__social-item">
+                      <a class="footer__social-link social-link--instagram" href="https://instagram.com" target="_blank">
+                        <svg class="footer__social-icon">
+                          <use xlink:href="sprite.svg#instagram"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="footer__social-item">
+                      <a class="footer__social-link social-link--facebook" href="https://facebook.com" target="_blank">
+                        <svg class="footer__social-icon">
+                          <use xlink:href="sprite.svg#facebook"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="footer__social-item">
+                      <a class="footer__social-link social-link--vk" href="https://vk.com" target="_blank">
+                        <svg class="footer__social-icon">
+                          <use xlink:href="sprite.svg#vk"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="footer__social-item">
+                      <a class="footer__social-link social-link--pinterest" href="https://pinterest.com" target="_blank">
+                        <svg class="footer__social-icon">
+                          <use xlink:href="sprite.svg#pinterest"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="footer__social-item">
+                      <a class="footer__social-link social-link--twitter" href="https://twitter.com" target="_blank">
+                        <svg class="footer__social-icon">
+                          <use xlink:href="sprite.svg#twitter"></use>
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="footer__bottom">
+                <a class="logo" href="index.html">
+                  <picture >
+                      <source srcset="img/logo-media.svg" media="(max-width: 600px)">
+                      <img src="img/logo.svg" alt="Логотип сайта">
+                  </picture>
+                </a>
+                <div class="footer__copy">© 2021 Woodman. Все права защищены.</div>
+              </div>
+            </div>
+          </footer>
+    </div>
+
+
+
+
+
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="js/main.min.js"></script>
+</body>
+
+</html>
